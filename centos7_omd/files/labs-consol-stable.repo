@@ -1,0 +1,7 @@
+[labs_consol_stable]
+name=labs_consol_stable
+baseurl=http://labs.consol.de/repo/testing/rhel7/x86_64/
+type=yum
+enable=1
+gpgcheck=0
+gpgkey=http://labs.consol.de/repo/testing/RPM-GPG-KEY

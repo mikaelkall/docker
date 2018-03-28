@@ -1,0 +1,20 @@
+read -r -n 1 -p "Mount host[y|n]: " input
+ 
+case $input in
+    [yY])
+       echo ""
+       echo "Tries to chroot host.."
+       echo "" 
+       chroot /mnt /bin/sh
+       echo ""
+    ;;
+ 
+    [nN][oO]|[nN])
+       echo ""
+    ;;
+ 
+    *)
+       echo "No such option"
+       exit 1
+    ;;
+esac
